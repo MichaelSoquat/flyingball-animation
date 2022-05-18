@@ -1,0 +1,7 @@
+<div [@ball]="move" (@ball.done)="animationEnded($event)" class="ball" [ngStyle]="{top:getTopPx(), left: getLeftPx()}"></div>
+<div class="keys">
+    <button (click)="moveUp()">Move up</button>
+    <button (click)="moveDown()">Move down</button>
+    <button (click)="moveRight()">Move right</button>
+    <button (click)="moveLeft()">Move left</button>
+</div>
